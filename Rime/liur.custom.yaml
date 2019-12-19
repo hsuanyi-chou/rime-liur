@@ -1,3 +1,6 @@
 patch:
   translator/enable_completion: true  #打開逐碼提示碼
   "switches/@2/reset": 0  #反查開關 (0為關閉，1為開啟)
+  menu:
+    alternative_select_keys: "0123456789" #重碼選擇鍵，如沒有寫-預設 ctrl+123456789
+    # 更激進一點，也可以嘗試設為 " 123456789"，也就是第一個候選項目的編號是隱形的空格，這樣如果搭配 style/candidate_format: "%c%@" 的話第一個候選項前面完全不會有字元，是另一種美觀
